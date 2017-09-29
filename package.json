@@ -1,0 +1,27 @@
+{
+  "name": "canopus-weekend-challenge-5",
+  "version": "1.0.0",
+  "description": "Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. It will be a collection called *listings*. Inside of it, you will find information for properties that are either \"for rent\" or \"for sale\".",
+  "main": "listingData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeekert/canopus-weekend-challenge-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeekert/canopus-weekend-challenge-5/issues"
+  },
+  "homepage": "https://github.com/mikeekert/canopus-weekend-challenge-5#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-material": "^1.1.5",
+    "angular-route": "^1.6.6",
+    "express": "^4.16.1",
+    "nodemon": "^1.12.1"
+  }
+}
