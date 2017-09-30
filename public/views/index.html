@@ -6,13 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src = "vendors/angular.min.js"></script>
+        <script src = "vendors/angular-route.js"></script>
+        <script src = "vendors/angular-material.js"></script>
+        
+        
         <script src = "scripts/client.js"></script>
-        <script src = "scripts/services/riddles.service.js"></script>
-        <script src = "scripts/controllers/riddles.controller.js"></script>
+
+        <script src = "scripts/services/homes.service.js"></script>
+        <script src = "scripts/controllers/index.controller.js"></script>
 
         <link href="/styles/styles.css" rel="stylesheet">
     </head>
-    <body>
-    HELLO
+    <body ng-app="App">
+        <main ng-controller="IndexController as IC">
+        <p>Listing</p>
+        <p> Cost: </p>
+        <p> Size: </p>
+        <p> City: </p>
+        </main>
     </body>
 </html>
