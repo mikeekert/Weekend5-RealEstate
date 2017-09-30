@@ -1,13 +1,13 @@
-App.controller = ('IndexController', function (Home) {
+App.controller('IndexController', function (Home) {
     var self = this;
+    console.log('in index controller');
 
-    self.GetHomes = function () {
-        $http({
-            method: 'GET',
-            url: '/homes'
-        }).then(function (resp) {
-            console.log(resp);
+    self.getHomes = function () {
+        Home.getHomes().then(function (response) {
+            self.homes = response.data;
+            console.log(self.homes);
+            
         });
     };
-    GetHomes();
+    self.getHomes();
 });

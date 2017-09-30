@@ -19,10 +19,13 @@
     </head>
     <body ng-app="App">
         <main ng-controller="IndexController as IC">
-        <p>Listing</p>
-        <p> Cost: </p>
-        <p> Size: </p>
-        <p> City: </p>
+                <p>Listings</p>
+            <div class = "home" ng-repeat="homes in IC.homes">
+                    <p> {{ homes.cost ? "Cost" : "Rent" }}: {{ homes.cost ? homes.cost  : homes.rent }} </p>
+                    <p> Size: {{ homes.sqft }} </p>
+                    <p> City: {{ homes.city }} </p>
+            </div>
+
         </main>
     </body>
 </html>
