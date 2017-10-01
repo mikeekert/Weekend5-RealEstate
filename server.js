@@ -28,4 +28,4 @@ app.get('/*', function (req, res) {
 
 
 
-app.listen(3000); // end server
+app.listen(process.env.PORT || 3000); // end server
