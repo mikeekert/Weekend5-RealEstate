@@ -10,4 +10,6 @@ var homeSchema = new Schema({
 });
 var Homes = mongoose.model( 'listings', homeSchema );
 
+
+
 module.exports = Homes;

@@ -4,8 +4,17 @@ var path = require('path');
 var mongoose = require('mongoose');
 var Homes = require('../models/homes');
 
-mongoose.connect('mongodb://localhost:27017/realestate');
+var databaseURI = '';
+// process.env.MONGODB_URI will only be defined if you are running on Heroku
+if(process.env.MONGODB_URI != undefined) {
+    // use the string value of the environment variable
+    databaseURI = process.env.MONGODB_URI;
+} else {
+    // use the local database server
+    databaseURI = 'mongodb://localhost:27017/realestate';
+}
 
+mongoose.connect(databaseURI);
 router.get('/', function (req, res) {
     console.log('in all get');
     Homes.find({}, function (err, response) {
