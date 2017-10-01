@@ -5,7 +5,8 @@ var homeSchema = new Schema({
     cost: Number,
     rent: Number,
     sqft: Number,
-    city: String
+    city: String,
+    image: String
 });
 var Homes = mongoose.model( 'listings', homeSchema );
 

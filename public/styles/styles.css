@@ -1,4 +1,75 @@
 .home {
-    width: 25%;
     border-style: solid;
+    width: 20%;
+    min-height: 32vh;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-shadow: 0 0 3px rgba(0,0,0,.5);
+    background-position: 50% 50%;
+
+}
+
+
+
+
+.mainContent {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 655px;
+    margin: 0 auto;
+    height: 65vh;
+}
+
+.cost, .size {
+    display: inline;
+    font-size: 14px;
+}
+
+.cost {
+    font-size: 28px;
+}
+
+.city {
+margin: 0;
+color: #ccc;
+text-shadow: 0 0 10px rgba(0,0,0,.95);
+font-weight: normal;
+}
+
+.info {
+    padding: 10px;
+    display: inline;
+    flex: 1 1 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.48) 0, rgba(255, 255, 255, 0) 100%);
+    
+}
+
+.below {
+    border-top: 1px solid;
+    margin: 19px auto 16px;
+    width: 98%;
+    border-top-color: rgba(0, 0, 0, 0.12)
+}
+
+.addListing {
+    margin: 0 22px;
+    padding: 0 20px;
+}
+
+.md-radio-button::focused {
+outline: none;
+}
+
+.modalURLcontainer {
+    width: 50%;
+}
+
+.modalURL {
+    width: 100%
 }

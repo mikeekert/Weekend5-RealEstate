@@ -7,8 +7,8 @@ var Homes = require('../models/homes');
 mongoose.connect('mongodb://localhost:27017/realestate');
 
 router.get('/', function (req, res) {
-    console.log('in homes get');
-    Homes.find({}, function (err, response) {
+    console.log('in rentals get');
+    Homes.find({ rent: {$exists: true} }, function (err, response) {
         if (err) {
             res.sendStatus(500);
         } else {

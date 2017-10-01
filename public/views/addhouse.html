@@ -1,0 +1,59 @@
+<main ng-init="ac.clearStuff()">
+  <md-content layout-gt-sm="row" layout-padding>
+    <div>
+
+      <md-input-container>
+        <label>City</label>
+        <input ng-model="ac.city">
+      </md-input-container>
+      <md-input-container>
+        <label>Size (Square Feet)</label>
+        <input ng-model="ac.size">
+      </md-input-container>
+    </div>
+  </md-content>
+
+  <md-content layout-gt-sm="row" layout-padding>
+    <div>
+      <md-input-container>
+        <md-radio-group ng-model="data.group1">
+          <md-radio-button value="Rent" class="md-primary" ng-click="costIn=''">Rent</md-radio-button>
+          <md-radio-button value="For Sale" ng-click="rentIn=''"> For Sale </md-radio-button>
+        </md-radio-group>
+      </md-input-container>
+    </div>
+  </md-content>
+  <md-content layout-padding>
+
+    <md-input-container ng-show='data.group1=="For Sale"'>
+      <label>Cost (For Sale)</label>
+      <input name="forsale" ng-model="ac.costIn">
+    </md-input-container>
+    <md-input-container ng-show='data.group1=="Rent"'>
+      <label>Rent (Per Month): {{rentIn}} </label>
+      <input name="rent" ng-model="ac.rentIn">
+    </md-input-container>
+    <!-- <div layout-gt-sm="row">
+          <md-input-container flex-gt-sm>
+            <label>Image URL</label>
+            <input ng-model="ac.url">
+          </md-input-container>
+        </div> -->
+    <md-content layout-gt-sm="row" layout-padding>
+      <div class="modalURLcontainer">
+          <md-input-container flex-gt-sm class="modalURL">
+            <label>Image URL</label>
+            <input ng-model="ac.url">
+          </md-input-container>
+      </div>
+    </md-content>
+
+    </md-input-container>
+    <div layout-gt-sm="row">
+      <md-input-container class="md-block" flex-gt-sm>
+        <md-button class="md-raised md-primary" ng-click="ac.submitListing()">Submit</md-button>
+      </md-input-container>
+    </div>
+
+  </md-content>
+</main>

@@ -1,0 +1,19 @@
+<main>
+        <div class="mainContent">
+                <div class="home" ng-repeat="homes in lc.homes track by $index" ng-style="{'background-image':'url(' + homes.image +')'}">
+                        <div class="info" layout="column" layout-align="end start">
+                                <div>
+                                        <p class="cost"> {{ homes.cost ? "Cost" : "Rent" }}: {{ homes.cost ? homes.cost : homes.rent | currency:$:0}}
+                                        </p>
+                                        <p class="size"> Sq.Ft.: {{ homes.sqft }} </p>
+                                </div>
+                                <div>
+                                        <p class="city"> City: {{ homes.city }} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="below">
+
+        </div>
+</main>

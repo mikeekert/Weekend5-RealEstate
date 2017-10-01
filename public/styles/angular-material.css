@@ -3569,7 +3569,8 @@ md-radio-button {
   margin-bottom: 16px;
   white-space: nowrap;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+outline:none; }
   md-radio-button[disabled] {
     cursor: default; }
     md-radio-button[disabled] .md-container {
