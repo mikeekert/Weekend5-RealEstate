@@ -8,7 +8,7 @@ App.controller('RentalsController', function (Home) {
                     self.homes.splice(i,1);   
                 } else if  
                 (self.homes[i].image == undefined) {
-                    self.homes[i].image = '/images/image' + i + '.jpg';
+                    self.homes[i].image = '../images/image' + i + '.jpg';
                 } else if 
                 (self.homes[i].rent == null ) {
                     self.homes.splice(i,1);
