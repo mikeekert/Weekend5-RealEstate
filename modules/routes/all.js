@@ -22,6 +22,7 @@ router.get('/', function (req, res) {
             res.sendStatus(500);
         } else {
             res.send(response);
+            console.log(response.length);
         }
     });
 }); // end messages get

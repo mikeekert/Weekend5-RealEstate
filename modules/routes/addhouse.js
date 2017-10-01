@@ -8,7 +8,7 @@ var databaseURI = '';
 // process.env.MONGODB_URI will only be defined if you are running on Heroku
 if(process.env.MONGODB_URI != undefined) {
     // use the string value of the environment variable
-    databaseURI = 'mongodb://<dbuser>:<dbpassword>@ds157584.mlab.com:57584/heroku_9vkt39sw';
+    databaseURI = 'mongodb://mike:1234asdf@ds157584.mlab.com:57584/heroku_9vkt39sw';
 } else {
     // use the local database server
     databaseURI = 'mongodb://localhost:27017/realestate';
