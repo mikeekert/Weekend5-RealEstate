@@ -5,7 +5,7 @@ App.controller('ListingsController', function (Home) {
             self.homes = response.data;
             for (var i = 0; i < self.homes.length; i++) {
                 if (self.homes[i].image == undefined) {
-                    self.homes[i].image = '../images/image' + i + '.jpg';
+                    self.homes[i].image = '../images/Image' + i + '.jpg';
                 }
             }
             Home.imageArray = self.homes;            

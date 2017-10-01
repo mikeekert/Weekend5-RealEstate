@@ -1,6 +1,6 @@
 <main>
         <div class="mainContent">
-                <div class="home" ng-repeat="homes in rc.homes track by $index" ng-style="{'background-image':'url(url({{ homes.image }})'}">
+                <div class="home" ng-repeat="homes in rc.homes track by $index" ng-style="{'background-image':'url({{ homes.image }})'}">
                         <div class="info" layout="column" layout-align="end start">
                                 <div>
                                         <p class="cost"> {{ homes.cost ? "Cost" : "Rent" }}: {{ homes.cost ? homes.cost : homes.rent | currency:$:0}}
