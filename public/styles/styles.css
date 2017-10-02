@@ -1,25 +1,24 @@
-.home {
-    border-style: solid;
-    width: 20%;
-    min-height: 32vh;
-    background-size: cover;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    flex-grow: 1;
-    text-shadow: 0 0 3px rgba(0, 0, 0, .5);
-    background-position: 50% 50%;
+.addListing {
+    margin: 0 22px;
+    padding: 0 20px;
 }
 
-.mainContent {
-    display: flex;
-    width: 95%;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    height: 655px;
-    margin: 0 auto;
-    height: 65vh;
+.below {
+    border-top: 1px solid;
+    border-top-color: rgba(0, 0, 0, 0.12);
+    margin: 19px auto 16px;
+    width: 98%;
+}
+
+.city {
+    color: #ccc;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .95);
+}
+
+.cost {
+    font-size: 28px;
 }
 
 .cost,
@@ -28,44 +27,44 @@
     font-size: 14px;
 }
 
-.cost {
-    font-size: 28px;
-}
-
-.city {
-    margin: 0;
-    color: #ccc;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .95);
-    font-weight: normal;
+.home {
+    background-position: 50% 50%;
+    background-size: cover;
+    border-style: solid;
+    color: #fff;
+    flex-grow: 1;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    min-height: 32vh;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    width: 20%;
 }
 
 .info {
-    padding: 10px;
+    background-image: linear-gradient(tobottom, rgba(0, 0, 0, 0.48) 0 rgba(255, 255, 255, 0) 100%);
     display: inline;
-    flex: 1 1 0%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.48) 0, rgba(255, 255, 255, 0) 100%);
+    flex: 1 1 0;
+    padding: 10px;
 }
 
-.below {
-    border-top: 1px solid;
-    margin: 19px auto 16px;
-    width: 98%;
-    border-top-color: rgba(0, 0, 0, 0.12)
-}
-
-.addListing {
-    margin: 0 22px;
-    padding: 0 20px;
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    height: 65vh;
+    margin: 0 auto;
+    overflow-y: auto;
+    width: 95%;
 }
 
 .md-radio-button::focused {
     outline: none;
 }
 
-.modalURLcontainer {
-    width: 50%;
+.modalURL {
+    width: 100%;
 }
 
-.modalURL {
-    width: 100%
+.modalURLcontainer {
+    width: 50%;
 }
