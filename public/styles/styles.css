@@ -77,18 +77,17 @@
     .mainContent {
         height: 85vh;
     }
-
-    .md-button._md-nav-button{
+    .md-button._md-nav-button {
         padding: 12px 0px !important;
         min-width: 0 !important;
         font-size: 10px;
     }
-    
-
+    ._md-nav-bar-list {
+        justify-content: space-around;
+    }
     .md-button.md-raised:not([disabled]) {
         font-size: 10px;
     }
-
     .addListing {
         margin: 0 0px;
         padding: 0 0px;
