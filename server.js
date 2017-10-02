@@ -19,8 +19,8 @@ app.use('/saledb', forsale);
 app.use('/addhouse', addhouse);
 app.use('/houseview', houseview);
 
-// app.get('/*', function (req, res) {
-//     res.sendFile(path.join(__dirname, 'public/views/index.html'));
-// });
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'public/views/index.html'));
+});
 
 app.listen(process.env.PORT || 3000); // end server
