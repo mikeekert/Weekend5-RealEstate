@@ -24,11 +24,11 @@ App.service('Home', function ($http) {
         });
     };
 
-    self.postListing = function (input){
+    self.postListing = function (input) {
         return $http({
             method: 'POST',
             url: '/',
             data: input
-        });//END $http post
-     };//END postRiddle
+        }); //END $http post
+    }; //END postRiddle
 });

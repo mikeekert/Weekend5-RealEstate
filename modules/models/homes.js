@@ -1,6 +1,5 @@
-var mongoose = require( 'mongoose' );
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
 var homeSchema = new Schema({
     cost: Number,
     rent: Number,
@@ -8,8 +7,5 @@ var homeSchema = new Schema({
     city: String,
     image: String
 });
-var Homes = mongoose.model( 'listings', homeSchema );
-
-
-
+var Homes = mongoose.model('listings', homeSchema);
 module.exports = Homes;

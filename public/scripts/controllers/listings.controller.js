@@ -8,7 +8,7 @@ App.controller('ListingsController', function (Home) {
                     self.homes[i].image = '../images/Image' + i + '.jpg';
                 }
             }
-            Home.imageArray = self.homes;            
+            Home.imageArray = self.homes;
         });
     };
     this.getHomes();

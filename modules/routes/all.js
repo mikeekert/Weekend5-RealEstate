@@ -6,7 +6,7 @@ var Homes = require('../models/homes');
 
 var databaseURI = '';
 // process.env.MONGODB_URI will only be defined if you are running on Heroku
-if(process.env.MONGODB_URI != undefined) {
+if (process.env.MONGODB_URI != undefined) {
     // use the string value of the environment variable
     databaseURI = 'mongodb://mike:1234asdf@ds157584.mlab.com:57584/heroku_9vkt39sw';
 } else {
@@ -27,19 +27,18 @@ router.get('/', function (req, res) {
     });
 }); // end messages get
 
-router.post( '/', function( req, res ){
-    console.log( 'in riddles post:', req.body );
-    var home = new Home (req.body);
-    home.save( function (err){
-        if(err) {
-        console.log('DB err', err);
-        res.sendStatus(500);
-    }//END if err
-    else {
-        res.sendStatus(200);
-    }//ENd else
-    })//END riddles save
+router.post('/', function (req, res) {
+    console.log('in riddles post:', req.body);
+    var home = new Home(req.body);
+    home.save(function (err) {
+        if (err) {
+            console.log('DB err', err);
+            res.sendStatus(500);
+        } //END if err
+        else {
+            res.sendStatus(200);
+        } //ENd else
+    }); //END riddles save
 }); //end messages post
-
 
 module.exports = router;

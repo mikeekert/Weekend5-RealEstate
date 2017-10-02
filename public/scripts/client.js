@@ -23,6 +23,4 @@ App.config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('light-blue')
     .accentPalette('blue');
-
-
 });

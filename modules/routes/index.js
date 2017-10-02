@@ -20,9 +20,6 @@ router.post( '/', function(req, res){
             res.sendStatus(200);
         }//ENd else
     }); //end messages post
-    
-
-    
 });
 
 module.exports = router;
