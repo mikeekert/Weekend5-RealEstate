@@ -69,3 +69,35 @@
 .modalURL {
     width: 100%
 }
+
+@media only screen and (max-width: 428px) {
+    .home {
+        width: 50%;
+    }
+    .mainContent {
+        height: 85vh;
+    }
+
+    .md-button._md-nav-button{
+        padding: 12px 0px;
+        font-size: 10px;
+    }
+
+    .md-button.md-raised:not([disabled]) {
+        font-size: 10px;
+    }
+
+    .addListing {
+        margin: 0 0px;
+        padding: 0 0px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 429px) {
+    .home {
+        width: 45%;
+    }
+    .mainContent {
+        height: 85vh;
+    }
+}
