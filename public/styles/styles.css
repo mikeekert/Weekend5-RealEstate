@@ -70,7 +70,7 @@
     width: 100%
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 532çpx) {
     .home {
         width: 50%;
     }
@@ -94,13 +94,14 @@
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 429px) {
+@media screen and (max-width: 768px) and (min-width: 533px) {
     .home {
         width: 45%;
     }
     .mainContent {
         height: 85vh;
     }
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
