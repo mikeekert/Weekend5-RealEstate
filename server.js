@@ -15,7 +15,7 @@ app.use('/', index);
 app.use('/all', all);
 app.use('/rentdb', rentals);
 app.use('/saledb', forsale);
-app.use('/addhouse', addhouse);
+// app.use('/addhouse', addhouse);
 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'public/views/index.html'));
